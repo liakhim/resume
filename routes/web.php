@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PdfController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +16,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::prefix('pdf')->group(function() {
+    Route::get('/preview', [PdfController::class, 'preview'])->name('pdf.preview');
+    Route::get('/download', [PdfController::class, 'download'])->name('pdf.download');
+    Route::get('/stream', [PdfController::class, 'stream'])->name('pdf.stream');
 });
