@@ -20321,7 +20321,10 @@ function render(_ctx, _cache) {
     }),
     _: 1 /* STABLE */,
     __: [1]
-  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_view)]);
+  }), _cache[3] || (_cache[3] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" | ")), _cache[4] || (_cache[4] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+    href: "/pdf/stream",
+    target: "_blank"
+  }, "Stream", -1 /* HOISTED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_view)]);
 }
 
 /***/ }),
@@ -25215,9 +25218,13 @@ var routes = [{
 }, {
   path: '/spa/about',
   component: _components_About_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
-}];
+}
+// Добавьте catch-all route для 404
+// { path: '/:pathMatch(.*)*', component: NotFound }
+];
 var router = (0,vue_router__WEBPACK_IMPORTED_MODULE_2__.createRouter)({
   history: (0,vue_router__WEBPACK_IMPORTED_MODULE_2__.createWebHistory)(),
+  // Важно для корректной работы
   routes: routes
 });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (router);

@@ -2,7 +2,8 @@
     <div class="spa-container">
         <nav>
             <router-link to="/spa">Home</router-link> |
-            <router-link to="/spa/about">About</router-link>
+            <router-link to="/spa/about">About</router-link> |
+            <a href="/pdf/stream" target="_blank">Stream</a>
         </nav>
         <router-view></router-view>
     </div>

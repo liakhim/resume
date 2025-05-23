@@ -6,7 +6,7 @@ const routes = [
     { path: '/spa', component: Home },
     { path: '/spa/about', component: About },
     // Добавьте catch-all route для 404
-    { path: '/:pathMatch(.*)*', component: NotFound }
+    // { path: '/:pathMatch(.*)*', component: NotFound }
 ]
 
 const router = createRouter({
