@@ -19,7 +19,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/spa/{any}', [SpaController::class, 'index'])
+Route::get('/spa/{any?}', [SpaController::class, 'index'])
     ->where('any', '.*')
     ->name('spa');
 

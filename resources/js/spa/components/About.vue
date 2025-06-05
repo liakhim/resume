@@ -1,6 +1,6 @@
 <template>
-    <div class="home">
-        <h1>About</h1>
+    <div class="about spa-container">
+<!--        <h1>About</h1>-->
     </div>
 </template>
 
@@ -10,10 +10,10 @@ export default {
 }
 </script>
 
-<style scoped>
-.home {
+<style lang="scss" scoped>
+.about {
+    font-family: Arial, sans-serif;
     padding: 20px;
-    background: #f5f5f5;
     border-radius: 8px;
     margin-top: 20px;
 }

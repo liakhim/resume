@@ -9,8 +9,8 @@
     </style>
 </head>
 <body>
-<h1>{{ $title }}</h1>
-<p>{{ $content }}</p>
-<p>Сгенерировано: {{ date('d.m.Y H:i') }}</p>
+    <header></header>
+    <main></main>
+    <footer></footer>
 </body>
 </html>
