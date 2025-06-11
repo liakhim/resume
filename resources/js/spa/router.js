@@ -1,10 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from './components/Home.vue'
 import About from './components/About.vue'
+import Sandbox from './components/Sandbox.vue'
 
 const routes = [
     { path: '/spa', component: Home },
     { path: '/spa/about', component: About },
+    { path: '/spa/sandbox', component: Sandbox },
     // { path: '/spa/*', redirect: '/spa' },
     {
         path: '/:pathMatch(.*)*', // Ловим все остальные пути

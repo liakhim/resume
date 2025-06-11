@@ -4,6 +4,7 @@
             <nav>
                 <router-link to="/spa">Home</router-link> |
                 <router-link to="/spa/about">About</router-link> |
+                <router-link to="/spa/sandbox">Sandbox</router-link> |
                 <a href="/pdf/stream" target="_blank">Stream</a>
             </nav>
         </div>
