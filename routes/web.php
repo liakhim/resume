@@ -27,4 +27,5 @@ Route::prefix('pdf')->group(function() {
     Route::get('/preview', [PdfController::class, 'preview'])->name('pdf.preview');
     Route::get('/download', [PdfController::class, 'download'])->name('pdf.download');
     Route::get('/stream', [PdfController::class, 'stream'])->name('pdf.stream');
+    Route::get('/hh', [PdfController::class, 'hhStream'])->name('hh.stream');
 });
