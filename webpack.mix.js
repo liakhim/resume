@@ -1,7 +1,7 @@
 const mix = require('laravel-mix');
 
 mix.js('resources/js/spa.js', 'public/js')
-    .vue() // Если используете Vue
+    .vue({ version: 3 }) // Если используете Vue
     .sass('resources/sass/app.scss', 'public/css') // Если нужен SCSS
     .version(); // Для кэш-бюстинга в production
 

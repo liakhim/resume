@@ -20497,7 +20497,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".home[data-v-0331865f] {\n  padding: 20px;\n  background: #fff;\n  -webkit-backdrop-filter: blur(10px);\n          backdrop-filter: blur(10px);\n  border-radius: 8px;\n  margin-top: 20px;\n}\n.home header[data-v-0331865f] {\n  display: flex;\n  align-items: flex-start;\n  justify-content: flex-start;\n}\n.home header .logo[data-v-0331865f] {\n  width: 120px;\n  height: 120px;\n  border-radius: 50%;\n  background: gray;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  overflow: hidden;\n}\n.home header .logo img[data-v-0331865f] {\n  height: 100%;\n}\n.home header .title-block[data-v-0331865f] {\n  border: 1px solid red;\n  padding: 0 0 0 20px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".home[data-v-0331865f] {\n  padding: 20px;\n  background: #fff;\n  backdrop-filter: blur(10px);\n  border-radius: 8px;\n  margin-top: 20px;\n}\n.home header[data-v-0331865f] {\n  display: flex;\n  align-items: flex-start;\n  justify-content: flex-start;\n}\n.home header .logo[data-v-0331865f] {\n  width: 120px;\n  height: 120px;\n  border-radius: 50%;\n  background: gray;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  overflow: hidden;\n}\n.home header .logo img[data-v-0331865f] {\n  height: 100%;\n}\n.home header .title-block[data-v-0331865f] {\n  border: 1px solid red;\n  padding: 0 0 0 20px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
