@@ -30,7 +30,7 @@ export default {
             height: 360px;
             // background-image: linear-gradient(135deg, #82c91e 23%, #da77f2 52%, #ffaaaa 80%);
             background-image: linear-gradient(135deg, rgba(39, 95, 217, 0.5) 10%, rgba(0, 0, 0, 0) 100%);
-            border-radius: 50px;
+            border-radius: 30px;
         }
         .cover-frame {
             position: absolute;
@@ -38,7 +38,7 @@ export default {
             left: -40px;
             width: 470px;
             height: 250px;
-            border-radius: 20px;
+            border-radius: 10px;
             overflow: hidden;
             transform: perspective(1500px) rotateY(-20deg) rotateX(5deg) translateZ(0);
             transition: 1s;
