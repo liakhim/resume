@@ -15,7 +15,12 @@ h1 {}
 :root {
     --twinkle-duration: 4s;
 }
-
+#spa-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
 .stars-wrapper {
     z-index: 1;
     position: fixed;

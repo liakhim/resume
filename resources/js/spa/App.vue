@@ -1,5 +1,6 @@
 <template>
     <div class="spa-container">
+        <Header/>
         <div class="navigation">
             <nav class="flex gap-2">
                 <router-link class="flex content-center text-white-500" to="/spa">Home</router-link> |
@@ -21,14 +22,21 @@
                 <a href="/pdf/stream" target="_blank">Stream</a>
             </nav>
         </div>
+
     </div>
     <router-view></router-view>
+    <div style="margin-top: auto">
+        <Footer/>
+    </div>
 </template>
 
 <script>
+import Header from "./components/Header.vue";
+import Footer from "./components/Footer.vue";
+
 export default {
     name: 'Main',
-    components: {},
+    components: {Header, Footer},
     methods: {
         test(e) {
             alert(e)
