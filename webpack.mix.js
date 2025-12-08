@@ -1,17 +1,25 @@
 const mix = require('laravel-mix');
 
 mix.js('resources/js/spa.js', 'public/js')
-    .vue({ version: 3 }) // Если используете Vue
-    .sass('resources/sass/app.scss', 'public/css') // Если нужен SCSS
-    .version(); // Для кэш-бюстинга в production
+    .vue({ version: 3 })
+    .sass('resources/sass/app.scss', 'public/css', {}, [
+        require('@tailwindcss/postcss'),
+        require('autoprefixer'),
+    ])
+    .version()
+    .webpackConfig({
+        stats: { children: true },
+        watchOptions: {
+            ignored: /node_modules|public\/css|public\/js|mix-manifest\.json/,
+        },
+    });
 
-// Автообновление через Browsersync
 mix.browserSync({
-    proxy: 'http://127.0.0.1:8000/', // URL вашего локального Laravel-приложения
+    proxy: 'http://127.0.0.1:8000/',
     files: [
         'public/js/**/*.js',
         'public/css/**/*.css',
-        'resources/views/**/*.php', // Следим за Blade-шаблонами
+        'resources/views/**/*.php',
     ],
     notify: false,
 });
