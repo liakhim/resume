@@ -10,9 +10,19 @@
         "production": "mix --production"
     },
     "devDependencies": {
+        "@tailwindcss/postcss": "^4.1.17",
+        "autoprefixer": "^10.4.22",
         "axios": "^0.25",
+        "browser-sync-webpack-plugin": "^2.3.0",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
-        "postcss": "^8.1.14"
+        "postcss": "^8.5.6",
+        "resolve-url-loader": "^5.0.0",
+        "sass": "^1.89.0",
+        "sass-loader": "^12.6.0",
+        "tailwindcss": "^4.1.17",
+        "vue": "^3.5.14",
+        "vue-loader": "^17.4.2",
+        "vue-router": "^4.5.1"
     }
 }

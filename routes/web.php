@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\PdfController;
+use App\Http\Controllers\SpaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +17,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/spa/{any?}', [SpaController::class, 'index'])
+    ->where('any', '.*')
+    ->name('spa');
+
+Route::prefix('pdf')->group(function() {
+    Route::get('/preview', [PdfController::class, 'preview'])->name('pdf.preview');
+    Route::get('/download', [PdfController::class, 'download'])->name('pdf.download');
+    Route::get('/stream', [PdfController::class, 'stream'])->name('pdf.stream');
+    Route::get('/hh', [PdfController::class, 'hhStream'])->name('hh.stream');
 });
